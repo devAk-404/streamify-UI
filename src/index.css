@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+.video-js {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.video-js .vjs-tech {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    /* or contain */
+}
+
+.video-js .vjs-control-bar {
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.video-js .vjs-play-control,
+.video-js .vjs-fullscreen-control {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* .video-js .vjs-play-control,
+.video-js .vjs-fullscreen-control {
+    opacity: 1 !important;
+} */
+
+
+.video-js .vjs-control-bar {
+    background: linear-gradient(to top,
+            rgba(37, 35, 35, 0.95),
+            rgba(58, 53, 53, 0.4)) !important;
+
+    backdrop-filter: blur(6px);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+}
+
+/* ICONS */
+.video-js .vjs-control {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* HOVER EFFECT */
+.video-js .vjs-control:hover {
+    color: #a855f7 !important;
+    /* purple glow */
+}
+
+/* PROGRESS BAR */
+.video-js .vjs-play-progress {
+    background: linear-gradient(to right, #a855f7, #ec4899) !important;
+}
+
+/* PROGRESS TRACK */
+.video-js .vjs-progress-holder {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* BIG PLAY BUTTON */
+.video-js .vjs-big-play-button {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 2px solid white !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-glow {
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.custom-overlay {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  z-index: 9999;
+  pointer-events: none;
+  color: white;
+  max-width: 700px;
+  transition: opacity 0.3s ease;
+}
+
+.custom-overlay.hidden {
+  opacity: 0;
+}
+
+.custom-overlay h1 {
+  font-size: 42px;
+  font-weight: 600;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.custom-overlay p {
+  font-size: 18px;
+  color: #ddd;
+  margin-top: 8px;
+}
+
+.custom-overlay span {
+  font-size: 14px;
+  color: #aaa;
+  display: block;
+  margin-top: 6px;
+}
+
+/* TITLE */
+.overlay-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.9);
+}
+
+/* META ROW */
+.overlay-meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+  align-items: center;
+}
+
+/* BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.rating {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.badge.quality {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  color: white;
+}
+
+/* DESCRIPTION */
+.overlay-desc {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* FIX VIDEOJS CONTROL BAR CLIPPING */
+.video-js {
+  overflow: visible !important;
+}
+
+.video-js .vjs-control-bar {
+  bottom: 0 !important;
+  opacity: 1 !important;
+}
+
+
+.slick-slider {
+  width: 100% !important;
+}
+
+.slick-list {
+  overflow: hidden !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
