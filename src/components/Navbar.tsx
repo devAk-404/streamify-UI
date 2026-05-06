@@ -23,11 +23,11 @@ const Navbar = () => {
     setMenuOpen(false)
   }
 
-  const linkStyle = (path: string) =>
-    `block px-3 py-2 text-sm font-medium transition ${location.pathname === path
-      ? "text-white"
-      : "text-gray-300 hover:text-white"
-    }`
+  // const linkStyle = (path: string) =>
+  //   `block px-3 py-2 text-sm font-medium transition ${location.pathname === path
+  //     ? "text-white"
+  //     : "text-gray-300 hover:text-white"
+  //   }`
 
   return (
     <>

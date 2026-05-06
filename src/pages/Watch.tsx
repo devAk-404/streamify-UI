@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams, useLocation } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { getVideoById } from "../services/VideoApiService"
 import VideoPlayer from "../components/VideoPlayer"
 import type { Video } from "../types/video"
@@ -10,12 +10,12 @@ const Watch = () => {
     const navigate = useNavigate()
 
     const { id } = useParams()
-    const location = useLocation()
+    // const location = useLocation()
 
     const [video, setVideo] = useState<Video | null>(null)
 
-    const query = new URLSearchParams(location.search)
-    const autoplay = query.get("autoplay") === "true"
+    // const query = new URLSearchParams(location.search)
+    // const autoplay = query.get("autoplay") === "true"
 
     useEffect(() => {
 
