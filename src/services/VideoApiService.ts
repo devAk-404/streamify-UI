@@ -1,7 +1,7 @@
 import axios from "axios"
 import type { Video } from "../types/video"
 
-const API_BASE = "http://localhost:5000/api/videos"
+const API_BASE = "http://13.60.7.117:5000/api/videos"
 
 /**
  * Upload video
