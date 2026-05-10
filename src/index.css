@@ -191,3 +191,5 @@ body {
 .slick-track {
   display: flex !important;
 }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
